@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SDF Driving Game — Milestone 2</title>
+    <style>
+      :root { color-scheme: dark; }
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #05040a;
+      }
+      /* The canvas fills the viewport; the raymarcher paints the whole scene. */
+      #scene {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+      }
+      /* Minimal HUD overlay — just an fps readout for now. */
+      #hud {
+        position: fixed;
+        top: 10px;
+        left: 12px;
+        margin: 0;
+        font: 13px/1.4 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+        color: #ff4fd8;
+        text-shadow: 0 0 6px rgba(255, 79, 216, 0.6);
+        letter-spacing: 0.02em;
+        pointer-events: none;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+    <div id="hud">fps —</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
