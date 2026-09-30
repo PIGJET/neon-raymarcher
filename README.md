@@ -46,7 +46,3 @@ npm run preview
 ```
 
 A browser with WebGL2 support is required.
-
-## Video walkthrough
-
-> 🎬 **Coming soon** — reserved for a continuous flight through the procedural city.
